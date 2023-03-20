@@ -102,14 +102,14 @@ class Script(scripts.Script):
     def ui(self, is_img2img):
         steps = gr.Slider(
             minimum=1.0,
-            maximum=100.0,
+            maximum=10000.0,
             step=1.0,
             value=5.0,
             label="Number of Outpainting Steps",
         )
         mask_width = gr.Slider(
             minimum=1.0,
-            maximum=512.0,
+            maximum=3000.0,
             step=1.0,
             value=128.0,
             label="Mask Width (mask_width < image_width / 2)",
