@@ -25,6 +25,10 @@ From the `Script` dropdown menu, select `Infinite Zoom` and leave it as default 
 1. You may want to use inpaint model `sd-v1-5-inpainting.ckpt` etc.
 2. To achieve optimal results, set the `Mask Width (mask_width < image_width / 2)` to 1/4 of the image width. For example, if your image is 1024x1024 pixels, try setting the mask width to 256 pixels.
 
+### Known issues
+You may notice a distinct frame or seam around the image, although it's less noticeable in the original diffusers version.  
+I'm currently investigating the cause of this issue and would greatly appreciate any assistance you can provide.
+
 ## Credits
 
 I'm just porting it to AUTOMATIC1111.  
